@@ -1,0 +1,51 @@
+<!-- first name , last name and email cant be blank 
+email muts be a valid email adress -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Registration Form</title>
+</head>
+<body>
+	<h1>Register</h1>
+<form>
+	<label for="firstname">First Name</label>
+	<input type="text" name="fname" id="firstname" required="true">
+	<label for="lastname">Last Name</label>
+	<input type="text" name="lname" id="lastname" required="true">
+	<br>
+	<label for="mradio">Male</label >
+	<input type="radio"  id="mradio" name="bgroup1">
+	<label for="fradio">Female</label>
+	<input type="radio" id="fradio" name="bgroup1">
+	<label for="othr">Other</label>
+	<input type="radio" id="othr" name="bgroup1">
+	<br>
+	<label for="email">Email:</label>
+	<input type="email" id="email" name="email" required="true">
+	<label for="pwd">Password</label>
+	<input type="password" id="pwd" name="password" pattern=".{5,10}" required title="Min 5 to Max 10 Character">
+	<p>Birthday
+	<select name="month">
+		<option>April</option>
+		<option>May</option>
+		<option>June</option>
+	</select>
+<select name="day">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+	</select>
+	<select >
+		<option>2017</option>
+		<option>2018</option>
+		<option>2016</option>
+	</select>
+<br>
+I agree to Terms and condition
+<input type="checkbox" name="cbox" value="yes">
+<button>Submit</button>	
+</p>
+	
+</form>
+</body>
+</html>
