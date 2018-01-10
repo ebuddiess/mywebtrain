@@ -1,0 +1,84 @@
+.list li{
+display:inline-block;
+}
+.list li a{
+display:inline-block;
+text-decoration:none;
+padding: 14px 16px;
+text-transform: uppercase;
+color:black;
+}
+.list{
+  width:100%;
+  position:fixed;
+  top:-18px;
+  left:-5px;
+box-shadow:8px 8px 16px 9px rgba(81, 98, 76, 0.89);
+}
+
+.list li:hover{
+background:rgb(91, 95, 102);
+font-size:1.3em;
+}
+
+.list:not(.home){
+  background:rgb(60, 204, 152);
+}
+.about{
+float:right;
+margin-right:35px;
+}
+.home{
+background:rgb(236, 118, 22);
+color:black;
+}
+
+.content{
+display:none;
+position:absolute;
+min-width:128px;
+background-color:#18e6c1;
+box-shadow: 2px 2px 2px 2px rgb(109, 135, 133);
+}
+
+.menu{
+postion:relative;
+display: inline-block;
+}
+
+.menu .content a {
+    color:black;
+    display:block;
+
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+text-transform: capitalize;
+}
+
+.menu:hover .content{
+display:block;
+position:absolute;
+}
+
+.menu .content a:hover{
+background: rgb(30, 188, 224);
+font-size:24px;
+}
+
+img{
+    width:30%;
+    float: left;
+    margin:1.66%;
+}
+
+h1{
+ margin-top:5%;
+	margin-left:1.6%;
+	font-size:30px;
+	border-bottom:3px solid #888888;
+	text-transform:uppercase;
+	font-weight:bold;
+	width:30%;
+	padding-bottom: 6px;
+}
