@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+margin:0;
+padding:0;
+}
+
+header{
+width:100%;
+padding:15px;
+background:rgb(70, 198, 110);
+border-bottom:2px solid black;
+box-shadow: 5px 10px 10px 20px rgba(85, 85, 85, 0.7);
+}
+
+header h1{
+font-family: 'Shadows Into Light', cursive;
+text-align:center;
+display:block;
+line-height:5px;
+font-size:3rem;
+}
+
+header h1:hover{
+font-size:4rem;
+}
+
+nav{
+overflow:hidden;
+background-color: #333;
+}
+nav ol li{
+float:left;
+list-style-type:none;
+position:relative;
+top:-10px;
+margin-top:-10px;
+margin-bottom:-10px;
+}
+nav ol li a{
+display:block;
+text-decoration:none;
+color:white;
+padding: 14px 16px;
+font-family: 'Permanent Marker', cursive;
+font-size:1.1rem;
+text-align:center;
+}
+
+nav ol li a:hover{
+background:rgba(30, 208, 43, 0.71);
+color: rgb(237, 223, 28);
+}
+
+section{
+width:100%;
+height:40%;
+}
+section img{
+position:relative;
+width:100%;
+height:40%;
+box-shadow:2px 12px 12px rgba(25, 153, 27, 0.7);
+}
+
+#heading{
+position:absolute;
+top:300px;
+left:10px;
+}
+#heading h1{
+color:white;
+margin-left:10px;
+font-size:3rem;
+font-family: 'Indie Flower', cursive;
+}
+.row{
+width:70%;
+height:149px;
+position:relative;
+top:-200px;
+left:190px;
+box-shadow:1px 2px 2px 12px rgba(85, 85, 85, 0.7);
+background:rgba(13, 31, 29, 0.57);
+}
+.column{
+    float: left;
+    padding: 10px;
+border-left:1px black solid;
+}
+
+.column.left{
+    width: 33.33%;
+}
+.column.middle{
+    width: 33.33%;
+}
+.column.right{
+    width: 33.33%;
+}
+
+div h4,p{
+color:white;
+display:inline-block;
+}
+
+.left:hover , .middle:hover ,.right:hover{
+color:white;
+background:rgb(11, 193, 171);
+}
+
+#menu{
+position:relative;
+top:-100px;
+width:100%;
+height:40%;
+font-size:20px;
+font-family: cursive;
+}
+
+.para{
+position:relative;
+top:100px;
+margin-left:10px;
+border-radius: 5px;
+margin-right:20px;
+background:rgb(104, 208, 180);
+float:left;
+width:40%;
+}
+.image{
+margin-left: 10px;
+float:left;
+width:50%;
+}
+
+#menu .para:hover{
+background:rgb(189, 54, 154)
+}
+#menu .para h1,p{
+margin-left:22px;
+color:black;
+}
+
+#menu .para h1:hover{
+color:white
+}
+
+#menu .para p:hover{
+color:white
+}
+body{
+background: rgba(22, 196, 227, 0.97);
+}
+.foot{
+position:relative;
+height:50px;
+top:530px;
+background: rgb(112, 238, 144);
+border-radius:5px;
+}
+
+.foot h1{
+position:relative;
+top:-570px;
+font-style:italic;
+font-family:indie-flower;
+text-align:center;
+}
