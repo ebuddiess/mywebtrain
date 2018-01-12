@@ -1,0 +1,236 @@
+body{
+font-family:Arial,sans-serif;
+font-size:15px;
+line-height:1.5px;
+padding:0;
+margin:0;
+background:#f4f4f4;
+}
+/*global container */
+.container{
+width:80%;
+margin:auto;
+overflow: hidden;
+}
+/*for first container*/
+.ctr{
+height:40px;
+margin:auto;
+overflow: hidden;
+}
+/*header*/
+header{
+background:url(nav.jpg);
+color:white;
+padding-top:30px;
+min-height:70px;
+box-shadow:2px 0px 8px 14px grey;
+border-bottom:#e8491d 3px solid;
+}
+/*changing color of a links etc*/
+header a{
+color:white;
+text-decoration: none;
+text-transform: uppercase;
+font-size:16px;
+display:block;
+}
+/*removing bullets removing margin and padding*/
+header ul{
+margin:0;
+padding:0;
+}
+/*floating list items to left*/
+header li{
+float:left;
+display:inline;
+margin-top:10px;
+padding:0 20px 0 20px;
+}
+/*floating branding to left*/
+header #branding{
+float:left;
+}
+
+/*floating nav to right*/
+header nav{
+margin-top: 10px;
+float:right;
+}
+/*giving margin and padding to h1*/
+header #branding h1{
+margin-top:15px;
+margin-left:15px;
+}
+
+/*hover effect over a link*/
+header nav a:hover {
+color:rgb(112, 228, 252);
+font-size:18px;
+}
+/*highlighting color of heading*/
+header .highlight{
+color:rgb(249, 80, 227);
+}
+
+header #branding:hover{
+font-weight:bolder;
+color:rgb(42, 230, 201);
+font-size:20px;
+}
+
+/*shocase starting*/
+#showcase{
+min-height:400px;
+background:url(showcase.jpg) 0 -700px;
+background-repeat:no-repeat ;
+text-align: center;
+color: rgb(162, 20, 191);
+}
+/*heading of showcase*/
+#showcase h1{
+margin-top: 100px;
+text-align: left;
+font-size:25px;
+color:rgba(223, 244, 240, 0.99);
+}
+/*paragraph of showcase*/
+#showcase p{
+margin-top:100px;
+word-spacing:2px;
+line-height:20px;
+font-size:20px;
+margin-left:0px;
+text-align: left;
+color:rgba(227, 242, 242, 1);
+}
+/*nesletter setttings*/
+#newsletter{
+padding:15px;
+color:white;
+box-shadow:12px 10px 20px 10px grey;
+background:rgba(11, 14, 14, 0.95);
+}
+/*moving h1 to left*/
+#newsletter h1{
+float:left;
+text-transform: capitalize;
+color:white;
+margin-top:25px;
+text-shadow:2px 2px 2px rgba(128, 123, 118, 0.89);
+}
+/*moving form to right*/
+#newsletter form {
+margin-top:10px;
+float:right;
+}
+
+#newsletter input[type="email"]{
+background-color: rgb(216, 238, 233);
+padding:10px;
+margin-right:2px;
+border-radius:7px;
+border-bottom:rgb(72, 2, 221) 2px solid;
+}
+
+#newsletter button[type="submit"]{
+background-color: rgb(221, 17, 17);
+padding:10px;
+border:none;
+margin-left: 10px;
+font-size:14px;
+box-shadow:12px 0px 20px 0px grey;
+border-radius: 2px;
+}
+#newsletter input[type="email"]:focus{
+background-color:rgb(192, 228, 155)
+}
+#newsletter button[type="submit"]:hover{
+background-color:rgb(218, 127, 20);
+padding:10px;
+font-size:18px;
+border-radius: 12px;
+}
+/*footer start*/
+footer{
+margin-top:20px;
+padding:20px;
+text-align: center;
+font-style:normal;
+font-weight: bold;
+background:url(nav.jpg);
+color:white;
+}
+
+footer:hover{
+opacity:0.8;
+}
+fieldset{
+width:50%;
+padding:10px;
+margin:0;
+line-height:20px;
+}
+fieldset  label input[type=text] , input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+fieldset label input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+fieldset input[type=submit]:hover {
+    background-color: #45a049;
+}
+.containermain{
+margin-left:350px;
+line-height:20px;
+}
+
+@media(max-width:768px) {
+header #branding
+header nav,header nav li
+, #newsletter h1 ,#newsletter form,#boxes .box
+,#main #main_col .page-title,fieldset{
+float:none;
+width:100%;
+display:inline-block;
+font-size:18px;
+text-align:center;
+}
+.ctr{
+height:100px;
+}
+nav ul{
+margin-top:-10px;
+}
+nav ul li{
+line-height:8px;
+}
+fieldset{
+margin-left:0px;
+}
+.page-title{
+margin-left:0px;
+}
+.containermain{
+width:100%;
+margin-left:0;
+}
+fieldset{
+max-width:90%;
+}
+}
