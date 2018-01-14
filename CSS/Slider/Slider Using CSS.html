@@ -1,0 +1,60 @@
+<html>
+<head>
+    
+    <style type="text/css">
+        
+        #hash{
+            margin:0;
+            background:#1AF2EA;
+            height:100px;
+            top:9px;
+            box-shadow:6px 4px 4px 2px grey ;
+            width:400px;
+            text-align:center;
+            line-height:100px;
+            position:relative;
+            overflow: hidden;
+            animation:slider 6s linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        .inner{
+            height:100px;
+            width:400px;
+            top:0px;
+            left:0px;
+            background-origin: border-box;
+         background:url(Penguins.jpg);
+            background-position:center -100px;
+            box-shadow:0 -4px 4px 2px grey;
+            color:white;
+            text-align: center;
+            line-height:100px;
+            position:absolute;
+            transition:left 0.7s ease-in;
+        }
+        
+        .inner:hover{
+            left:500px;
+        }
+        
+        @keyframes slider{
+            from{left:0px;}
+            to{left:768px;}
+        }
+        
+    </style>
+</head>
+    <body>
+        
+<div id= "hash" >
+    Hello World
+<div class = "inner">
+    Hover Over Me
+</div>
+</div>
+    
+</body>
+
+</html>
