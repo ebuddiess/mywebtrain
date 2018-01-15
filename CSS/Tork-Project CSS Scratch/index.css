@@ -1,0 +1,284 @@
+
+.design:before{
+content:" asadssd";
+position:relative;
+bottom:-95%;
+left:50%;
+font-size:9px;
+border-radius:99%;
+padding:50px;
+background:white;
+color:white;
+border:1px transparent solid;
+}
+.design{
+background:rgb(17, 16, 12);
+height:300px;
+}
+.design h1{
+margin-top:100px;
+margin-left:200px;
+text-align:center;
+color:white;
+}
+.row{
+position:relative;
+background:rgb(142, 85, 168);
+overflow:hidden;
+height:480px;
+}
+.left{
+position: absolute;
+top:100px;
+left:150px;
+width:50%;
+}
+.right img{
+height:580px;
+}
+.left .super h1{
+font-size:30px;
+color:White;
+text-transform: capitalize;
+}
+.left .super button:hover{
+background:rgb(204, 84, 26);
+transition:0.70s;
+box-shadow: 2px 3px 6px grey;
+}
+.left .super button{
+  border: 0px solid #fff;
+  display: inline-block;
+  min-width: 170px;
+  padding: .4em;
+  height: 45px;
+  text-align: center;
+  color: #fff;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 30px;
+  margin-top: 30px;
+  background-color: #3bd3ba;
+  transition:0.5s;
+}
+.right{
+position: absolute;
+top:-13px;
+right:-108px;
+width:50%;
+}
+.col{
+float:left;
+}
+
+body {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+header {
+  box-sizing: border-box;
+  padding: 20px;
+  overflow:hidden;
+  height: 100px;
+  background: rgba(36, 36, 43, 0.86);
+}
+
+.search {
+  padding: 10px;
+}
+
+.search input[type="submit"] {
+  background: #835FA9;
+  height: 46px;
+  width: 120px;
+  color: #fff;
+  border: none;
+  display: inline-block;
+  line-height: 46px;
+  text-align: center;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+
+.search input[type="text"] {
+  background: #343C48;
+  border-radius: 300px;
+  height: 46px;
+  border: 1px transparent solid;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.search input[type="text"]:focus {
+  background: rgb(64, 47, 61);
+  color: white;
+  border: 1px solid rgba(120, 51, 221, 0.94);
+}
+
+header .logo {
+  float: left;
+}
+
+/*positioning of images*/
+
+.logo img {
+  position: relative;
+  top: -15px;
+}
+
+header .search {
+  float: right;
+}
+
+/*navigation configuration*/
+nav{
+position:sticky;
+top:0;
+}
+#menu {
+  box-shadow: 4px 2px 4px grey;
+  list-style-type: none;
+  background: rgb(23, 22, 24);
+  margin:0;
+  display: flex;
+}
+
+.inner {
+  position: relative;
+}
+
+#menu li {
+  padding: 20px;
+  flex-direction: row;
+}
+
+#menu a {
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.content {
+  top: 57px;
+  right: -7px;
+  display:none;
+  background: rgb(19, 16, 23);
+  position: absolute;
+}
+
+.content a {
+  padding: 12px;
+  display:block;
+  color: black;
+}
+
+#menu .inner:hover .content {
+  display: block;
+  box-shadow: 4px 3px 6px grey;
+  position: absolute;
+}
+
+.content a:hover {
+  background: rgb(163, 163, 156);
+}
+
+#menu li:hover {
+  background: rgba(142, 152, 147, 0.81);
+}
+
+.heading{
+overflow:hidden;
+height:600px;
+background-position: top;
+background-image:url(homebg.jpg);
+}
+.heading .inner-head{
+color:white;
+position:relative;
+top:198px;
+padding-top:20px;
+padding-left:10px;
+left:710px;
+max-width:600px;
+height:300px;
+}
+
+
+.inner-head{
+opacity:0.6;
+border-radius:62px 118px 90px 120px;
+background:rgb(66, 70, 70);
+}
+
+.inner-head:hover{
+box-shadow:5px 4px 6px rgb(18, 191, 176);
+background:rgba(90, 72, 120, 0.44);
+opacity:0.7;
+}
+
+.row1 .l , .r{
+width:50%;
+}
+.row1 .l{
+height:400px;
+color:white;
+background: rgb(190, 74, 224);
+}
+.row1 .l .head-con{
+position:relative;
+left:100px;
+top:30px;
+}
+.row1 .r{
+overflow: hidden;
+}
+.row1 .r img{
+width:800px;
+margin-right:0px;
+height:400px;
+}
+
+.row2 {
+position:relative;
+top:-10px;
+height:400px;
+}
+.row2 .r{
+background: rgb(190, 74, 224);
+height:408px;
+}
+
+.row2 .col h1,p{
+color:white;
+margin-left:30px;
+}
+.row2 img{
+width:800px;
+height:410px;
+}
+.row2 .l{
+overflow: hidden;
+}
+.row2 .l , .r{
+width:50%;
+}
+.foot h1 {
+color:black;
+font-style: italic;
+background:rgb(71, 28, 113);
+color:white;
+}
+
+.row2 .col:hover{
+box-shadow: 4px 6px 10px grey;
+transition: transform 0.99s;
+transform: scale(1.1,1.1);
+background:rgb(114, 21, 219);
+}
