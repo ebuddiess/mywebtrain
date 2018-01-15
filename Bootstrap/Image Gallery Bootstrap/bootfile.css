@@ -1,0 +1,38 @@
+.navbar-inverse{
+background:rgb(44, 59, 68);
+}
+
+img{
+padding:10px;
+height:auto;
+}
+.nav li:hover{
+background:rgb(162, 161, 171);
+}
+.jumbotron:hover{
+background:rgb(27, 123, 144);
+color:#rgb(16, 26, 21);
+}
+.jumbotron{
+background:rgb(5, 5, 4);
+color:#eef7ff;
+}
+
+body
+{
+padding-top:70px;
+}
+.thumbnail{
+transition:transform 0.7s ease;
+}
+.navbar-inverse .navbar-nav>li>a{
+color:white;
+}
+.navbar-inverse .navbar-brand{
+color:white;
+}
+.thumbnail:hover{
+transform:scale(1.1,1.1);
+box-shadow:2px 4px 6px grey , -2px -4px 6px grey;
+background-color:rgb(28, 185, 190);
+}
