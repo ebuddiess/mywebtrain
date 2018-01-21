@@ -1,0 +1,83 @@
+/*making bodycolor */
+
+body {
+  font-family: "Avenir";
+  margin: 0;
+  background-color: #232323;
+}
+
+/*configuring the all squares inside div*/
+
+.square {
+  width: 30%;
+  float: left;
+  margin: 1.66%;
+ border-radius:15%;
+transition : background 0.80s;
+-webkit-transition : background 0.80s;
+-moz-transition : background 0.80s;
+  padding-bottom: 30%;
+  background:purple;
+}
+
+/*configuring the main div */
+
+#container {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#message {
+  width: 20%;
+text-transform: uppercase;
+  display: inline-block;
+}
+
+#colordisplay {
+  font-size: 200%;
+}
+
+h1 {
+  padding: 20px 0;
+  text-align: center;
+  line-height: 1.1;
+  margin: 0;
+  font-weight: normal;
+  font-family: 'Supermercado One', cursive;
+  color: white;
+}
+
+#stripe {
+  background: white;
+  height: 30px;
+  text-align: center;
+}
+
+footer{
+font-size:10px;
+clear:left;
+}
+.selected {
+  color: white;
+  background:rgb(35, 36, 36);
+}
+
+button {
+outline: none;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  font-size: inherit;
+  color: rgb(73, 190, 240);
+  letter-spacing: 1px;
+}
+
+button:hover {
+transition:all 1s ease;
+-webkit-transition:all 1s ease;
+-moz-transition:all 1s ease;
+  color: white;
+  background:rgb(35, 36, 36);
+}
