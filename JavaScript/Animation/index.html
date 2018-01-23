@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Patpat Clone</title>
+  <script type="text/javascript" src="assets/js/lib/paper.js"></script>
+<script type="text/javascript" src= "https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.8/howler.js"></script>
+  <link rel="stylesheet" href="assets/css/patapat.css">
+  <script type="text/paperscript" canvas="canvas1">
+// making collection array and storing all sounds
+var collection =[];
+var sound1 = new Howl({
+    src: ['assets/sounds/clay.mp3']
+  });
+collection.push(sound1);
+var sound2 = new Howl({
+      src: ['assets/sounds/bubbles.mp3']
+});
+collection.push(sound2);
+var sound3 = new Howl({
+    src: ['assets/sounds/confetti.mp3']
+  });
+collection.push(sound3);
+var sound4 = new Howl({
+      src: ['assets/sounds/corona.mp3']
+});
+collection.push(sound4);
+var sound5 = new Howl({
+    src: ['assets/sounds/dotted-spiral.mp3']
+  });
+collection.push(sound5);
+var sound6 = new Howl({
+      src: ['assets/sounds/flash-1.mp3']
+});
+collection.push(sound6);
+var sound7 = new Howl({
+    src: ['assets/sounds/flash-2.mp3']
+  });
+collection.push(sound7);
+var sound8 = new Howl({
+      src: ['assets/sounds/glimmer.mp3']
+});
+collection.push(sound8);
+var sound9 = new Howl({
+    src: ['assets/sounds/moon.mp3']
+  });
+collection.push(sound9);
+var sound10 = new Howl({
+      src: ['assets/sounds/pinwheel.mp3']
+});
+collection.push(sound10);
+var sound11 = new Howl({
+    src: ['assets/sounds/piston-1.mp3']
+  });
+collection.push(sound11);
+var sound12 = new Howl({
+      src: ['assets/sounds/piston-2.mp3']
+});
+collection.push(sound12);
+var sound13 = new Howl({
+    src: ['assets/sounds/splits.mp3']
+  });
+collection.push(sound13);
+var sound14 = new Howl({
+      src: ['assets/sounds/squiggle.mp3']
+});
+collection.push(sound14);
+var sound15 = new Howl({
+    src: ['assets/sounds/suspension.mp3']
+  });
+collection.push(sound15);
+var sound16 = new Howl({
+      src: ['assets/sounds/ufo.mp3']
+});
+collection.push(sound16);
+var sound17 = new Howl({
+    src: ['assets/sounds/veil.mp3']
+  });
+collection.push(sound17);
+var sound18 = new Howl({
+      src: ['assets/sounds/wipe.mp3']
+});
+collection.push(sound18);
+var sound19 = new Howl({
+    src: ['assets/sounds/zig-zag.mp3']
+  });
+collection.push(sound19);
+var sound20 = new Howl({
+      src: ['assets/sounds/bubbles.mp3']
+});
+collection.push(sound20);
+// making random circle within the vieport
+var width =view.size.width;
+var height =view.size.height;
+var circles = [];
+tool.onKeyDown = function(event) {
+  var no = Math.floor(Math.random()*21);
+  var music = collection[no]; //playing radom music on keypresss
+  music.play();
+    var path = new Path.Circle({ //creating new circles at random position and storing to circles array
+       center: new Point(Math.random()*width,Math.random()*height),
+       radius: 500,
+       fillColor:"#"+Math.floor(Math.random()*666666)
+  });
+circles.push(path);
+  }
+function onFrame(event){
+showing the circle at each frame per event
+for(var i=0;i<circles.length;i++){
+circles[i].scale(0.9);
+circles[i].fillColor.hue+=1;
+}
+}
+ </script>
+
+</head>
+
+<body>
+  <canvas id="canvas1"></canvas>
+</body>
+
+</html>
