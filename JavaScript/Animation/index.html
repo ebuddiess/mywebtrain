@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Patpat Clone</title>
-  <script type="text/javascript" src="assets/js/lib/paper.js"></script>
+<script type="text/javascript" src= "https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.js"></script>
 <script type="text/javascript" src= "https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.8/howler.js"></script>
   <link rel="stylesheet" href="assets/css/patapat.css">
-  <script type="text/paperscript" canvas="canvas1">
+  <script type= "text/paperscript" canvas= "canvas1">
 // making collection array and storing all sounds
-var collection =[];
+var collection = [];
 var sound1 = new Howl({
     src: ['assets/sounds/clay.mp3']
   });
@@ -96,22 +96,22 @@ var height =view.size.height;
 var circles = [];
 tool.onKeyDown = function(event) {
   var no = Math.floor(Math.random()*21);
-  var music = collection[no]; //playing radom music on keypresss
+  var music = collection[no];
   music.play();
-    var path = new Path.Circle({ //creating new circles at random position and storing to circles array
+    var path = new Path.Circle({
        center: new Point(Math.random()*width,Math.random()*height),
        radius: 500,
        fillColor:"#"+Math.floor(Math.random()*666666)
   });
-circles.push(path);
+  circles.push(path);
+    }
+  function onFrame(event){
+  //showing the circle at each frame per event
+  for(var i=0;i<circles.length;i++){
+  circles[i].scale(0.9);
+  circles[i].fillColor.hue+=1;
   }
-function onFrame(event){
-showing the circle at each frame per event
-for(var i=0;i<circles.length;i++){
-circles[i].scale(0.9);
-circles[i].fillColor.hue+=1;
-}
-}
+  }
  </script>
 
 </head>
