@@ -1,0 +1,26 @@
+<style>
+       h1{
+        text-align:center;
+        background:#FF5733;
+    }
+    img{
+        width:70px;
+        height:70px;
+    }
+    li
+    {
+        color:yellow;
+    }
+    div{
+        padding:10px;
+        border:2px solid black;
+    }
+</style>
+<h1>Result Page</h1>
+<% data.Search.forEach(function(movie){ %>
+<div style="background:<%= "#"+Math.floor(Math.random()*666666) %>;">
+<li> <%= movie.Title %> - <%= movie.Year %> <img src=<%=movie.Poster%>></li> 
+</div>
+<% }); %>
+
+<a href="/">Search Again </a>
