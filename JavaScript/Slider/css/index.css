@@ -1,0 +1,76 @@
+@keyframes mymove {
+    0% {
+        top: -500px;
+        opacity: 0;
+    }
+    70% {
+        opacity: 0.7;
+        top: 200px;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.head {
+    animation: mymove 0.5s ease-in;
+    background: transparent;
+    margin: 20px;
+    position: relative;
+    border: 2px solid grey;
+    box-shadow: 2px 4px 6px grey;
+}
+
+img {
+    width: 100%;
+    opacity: 1;
+    transition: opacity 1s;
+    contain: content;
+    height: 400px;
+}
+
+.fade {
+    opacity: 0.8;
+}
+
+.circle {
+    position: absolute;
+    width: 100px;
+    bottom: 0px;
+    right: 50%;
+    height: 50px;
+    background: transparent;
+    margin: 0 auto;
+}
+
+ul {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.circle ul li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+ul li a {
+    padding-left: 20px;
+    padding-bottom: 4px;
+    text-decoration: none;
+    border-radius: 70%;
+    background: grey;
+}
+
+li:hover {
+    transition: all 1s;
+    transform: scale(1.1, 1.1);
+}
+
+ul li a:hover {
+    transition: all 1s;
+    background: #19f7e4;
+}
