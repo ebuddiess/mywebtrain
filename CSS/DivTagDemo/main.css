@@ -1,0 +1,53 @@
+    .body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .outer {
+        box-sizing: border-box;
+        height: 500px;
+        width: 90%;
+        padding-left: 100px;
+        padding-top: 2.7%;
+        margin: 0 auto;
+        background: #9e1919;
+    }
+    
+    .wrapper {
+        box-sizing: border-box;
+        padding-top: 10px;
+        height: 90%;
+        width: 90%;
+        background: #23c1d6;
+    }
+    
+    .slider {
+        float: right;
+        margin: 10px;
+        height: 90%;
+        width: 30%;
+        background: yellow;
+    }
+    
+    .top,
+    .middle,
+    .bottom {
+        background: grey;
+        width: 65%;
+        margin-left: 10px;
+    }
+    
+    .top {
+        height: 25%;
+    }
+    
+    .bottom {
+        height: 25%;
+        margin-top: 10px;
+    }
+    
+    .middle {
+        height: 25%;
+        margin-top: 10px;
+    }
