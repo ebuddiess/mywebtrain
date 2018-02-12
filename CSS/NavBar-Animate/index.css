@@ -1,0 +1,97 @@
+                    * {
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    nav ul::after {
+                        content: "";
+                        display: block;
+                        clear: both;
+                    }
+                    
+                    nav ul {
+                        background: rgb(14, 11, 11);
+                        list-style-type: none;
+                    }
+                    
+                    li {
+                        transition: background 0.70s;
+                        border: 1px solid #2b3d46;
+                        background: rgb(24, 19, 19);
+                        width: 100px;
+                        padding: 10px;
+                        float: left;
+                        position: relative;
+                    }
+                    
+                    nav {
+                        width: 100%;
+                        height: 40px;
+                    }
+                    
+                    a {
+                        display: block;
+                        text-align: center;
+                        color: white;
+                        text-decoration: none;
+                    }
+                    
+                    nav ul .branch {
+                        position: absolute;
+                        margin-left: -12px;
+                        top: 37px;
+                        display: none;
+                    }
+                    
+                    nav ul li:hover .branch {
+                        animation: mymove 1s;
+                        display: block;
+                    }
+                    
+                    nav ul .branch .india {
+                        position: absolute;
+                        top: -2px;
+                        display: none;
+                        margin-left: 109px;
+                        margin-right: 0;
+                    }
+                    
+                    nav ul .branch .india li {
+                        animation: move 1s;
+                    }
+                    
+                    nav ul .branch li:hover .india {
+                        display: block;
+                    }
+                    
+                    li:hover {
+                        background: rgb(87, 79, 79);
+                    }
+                    
+                    @keyframes move {
+                        0% {
+                            transform: rotateX(0deg);
+                        }
+                        70% {
+                            opacity: 0.6;
+                            transform: translateY(10px);
+                        }
+                        100% {
+                            opacity: 1;
+                            transform: rotateY(180deg);
+                        }
+                    }
+                    
+                    @keyframes mymove {
+                        0% {
+                            transform: rotateX(0deg);
+                        }
+                        70% {
+                            opacity: 0.6;
+                            transform: scale(1.1, 1.1);
+                        }
+                        100% {
+                            opacity: 1;
+                            transform: rotateY(-160deg);
+                        }
+                    }

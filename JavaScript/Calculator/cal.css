@@ -1,0 +1,93 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .outer {
+            box-shadow: 2px 4px 6px grey;
+            width: 50%;
+            height: 400px;
+            background: #16d3aa;
+            margin: 2% auto;
+            padding: 10px;
+        }
+        
+        .inner {
+            margin-left: 26px;
+            width: 90%;
+            margin-top: 10px;
+            height: 90%;
+            box-sizing: border-box;
+            background: pink;
+        }
+        
+        .editfield {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100px;
+        }
+        
+        .editfield #result,
+        #values {
+            width: 97%;
+            padding: 10px;
+            font-size: 1.6em;
+            float: left;
+            border: 1px solid grey;
+        }
+        
+        #values {
+            clear: both;
+        }
+        
+        #values:focus {
+            color: white;
+            background: rgb(40, 143, 202);
+        }
+        
+        .button {
+            clear: both;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 30px;
+            height: 258px;
+        }
+        
+        .button button {
+            border: 2px solid grey;
+            box-shadow: 2px 4px 6px grey;
+            padding: 15px;
+            margin: 2px;
+            margin-bottom: 12px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        
+        .button button:hover {
+            background: #d47f0f;
+            box-shadow: 1px 2px 15px grey;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        input {
+            text-align: right;
+        }
+        
+        @media(min-width:717px) {
+            .button button {
+                padding: 10px;
+                margin: 4px;
+                margin-left: 4px;
+                font-size: 1em;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .editfield #result,
+            #values {
+                width: 93%;
+            }
+        }
