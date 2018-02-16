@@ -1,0 +1,88 @@
+.outer {
+    border: 4px solid black;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1px;
+    background: rgb(0, 255, 21);
+}
+
+.inner {
+    border: 4px solid black;
+    width: 90%;
+    height: 90%;
+    padding: 1px;
+    margin: 20px auto;
+    background: lightcoral;
+}
+
+.window {
+    border: 4px solid black;
+    width: 90%;
+    height: 90%;
+    background: pink;
+    margin: 20px auto;
+}
+
+.window .left {
+    padding: 1px;
+    border: 4px solid black;
+    width: 50%;
+    height: 100%;
+    background: rgb(206, 243, 149);
+}
+
+.window .right {
+    border: 4px solid black;
+    float: right;
+    width: 50%;
+    height: 100%;
+    background: rgb(43, 177, 211)
+}
+
+.window .right::after {
+    content: "";
+    display: block;
+}
+
+.window .right .innerright {
+    width: 70%;
+    border: 4px solid black;
+    background: rgb(226, 39, 70);
+    height: 90%;
+    box-shadow: 4px 6px 6px grey;
+    margin: 20px auto;
+}
+
+.window .left .wrapper {
+    height: 70%;
+    width: 70%;
+    border: 4px solid black;
+    padding: 1px;
+    background: rgb(35, 224, 215);
+    margin: 50px auto;
+}
+
+.window .left .wrapper .box {
+    float: left;
+    height: 46%;
+    width: 46%;
+    border: 2px rgb(232, 248, 8) dashed;
+    margin: 1%;
+}
+
+.window .left .wrapper .A {
+    background: rgb(158, 42, 42);
+}
+
+.window .left .wrapper .B {
+    background: rgb(22, 24, 167);
+}
+
+.window .left .wrapper .C {
+    background: rgb(187, 13, 135);
+}
+
+.window .left .wrapper .D {
+    background: rgb(204, 16, 88);
+}
