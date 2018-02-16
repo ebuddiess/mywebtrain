@@ -1,0 +1,25 @@
+.outer .even {
+    clear: both;
+    width: 47%;
+    transition: transform 1s;
+    margin: 10px 20px;
+    background: #5dd44e;
+    height: 150px;
+}
+
+.outer .odd {
+    float: right;
+    transition: transform 1s;
+    width: 47%;
+    margin: 10px 20px;
+    background: rgb(184, 22, 49);
+    height: 150px;
+}
+
+.outer .eventoggle {
+    transform: translate(110%);
+}
+
+.outer .oddtoggle {
+    transform: translate(-110%);
+}
