@@ -1,0 +1,73 @@
+body {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header.body {
+    width: 100%;
+    background: orange;
+    height: 600px;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    padding: 1px;
+}
+
+header.body .outer {
+    width: 98%;
+    box-sizing: border-box;
+    background: white;
+    margin: -12px auto;
+    padding: 8px;
+    height: 87%;
+}
+
+header.body .header {
+    background: black;
+    color: white;
+    width: 90%;
+    height: 15%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px auto;
+}
+
+header.body .outer .main {
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-left: 67px;
+    height: 60%;
+    background: rgb(101, 139, 221);
+}
+
+header.body .outer .main .post {
+    width: 90%;
+    height: 89%;
+    padding-top: 120px;
+    box-sizing: border-box;
+    margin: 4px auto;
+    background: yellow;
+}
+
+header.body .outer .sidebar {
+    width: 37%;
+    float: right;
+    padding-top: 120px;
+    box-sizing: border-box;
+    margin-right: 64px;
+    height: 60%;
+    background: rgb(105, 224, 105);
+}
+
+header.body .footer {
+    background: rgb(245, 16, 16);
+    color: rgb(34, 25, 25);
+    width: 90%;
+    height: 15%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px auto;
+}
