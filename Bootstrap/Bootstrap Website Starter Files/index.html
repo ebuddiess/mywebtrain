@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Website Tutorial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            background-color: rgb(40, 230, 151);
+            color: rgb(97, 230, 108);
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 1% 0;
+            font-size: 1.2em;
+            border: 0;
+        }
+        
+        .navbar-brand {
+            float: left;
+            min-height: 55px;
+            padding: 0 15px 5px;
+        }
+        
+        .navbar-inverse .navbar-nav .active a,
+        .navbar-inverse .navbar-nav .active a:focus,
+        .navbar-inverse .navbar-nav .active a:hover {
+            color: rgb(9, 14, 12);
+            background-color: rgb(40, 230, 151);
+        }
+        
+        .navbar-inverse .navbar-nav li a {
+            color: rgb(13, 7, 24);
+        }
+        
+        .carousel-caption {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        @media (max-width:600px) {
+            .carousel-caption {
+                display: none;
+            }
+            #icon {
+                max-width: 150px;
+            }
+            h4 {
+                font-size: .9em;
+            }
+        }
+        
+        .btn {
+            font-size: 18px;
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 12px 22px;
+            background-color: rgb(228, 98, 76);
+        }
+        
+        #icon {
+            max-width: 200px;
+            margin: 1% auto;
+        }
+        
+        .container {
+            margin: 4% auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/w3newbie.png" alt="" srcset="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="MyNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#mycarousel" data-slide-to="0" class="active">
+
+            </li>
+            <li data-target="#mycarousel" data-slide-to="1">
+
+            </li>
+            <li data-target="#mycarousel" data-slide-to="2">
+
+            </li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="https://res.cloudinary.com/carsguide/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/bugatti-chrion-geneva-motor-show-2016.jpg" alt="" srcset="" class="img-responsive" style="width:100%;">
+                <div class="carousel-caption">
+                    <h1>ME MAKE WORLD BEST CARS</h1>
+                    <button type="button" class="btn btn-default">SEE MORE</button>
+                </div>
+                <!--END ACTIVE -->
+            </div>
+            <div class="item">
+                <img src="http://st.motortrend.com/uploads/sites/5/2017/09/2017-Best-Drivers-Car-contenders-07.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img src="https://i.ytimg.com/vi/ju2vHJ-t9N8/maxresdefault.jpg" alt="" srcset="" style="width:100%;">
+            </div>
+        </div>
+        <!-- started slider controls -->
+        <a href=" #mycarousel " class="left carousel-control " role="button " data-slide="prev ">
+            <span class="glyphicon glyphicon-chevron-left " aria-hidden="true "></span>
+            <span class="sr-only ">PREVIOUS</span>
+        </a>
+        <a href="#mycarousel " class="right carousel-control " role="button " data-slide="next ">
+            <span class="glyphicon glyphicon-chevron-right " aria-hidden="true "></span>
+            <span class="sr-only ">NEXT</span>
+        </a>
+    </div>
+    <!-- Slider end -->
+    <div class="conatiner text-center ">
+        <h1>What We are Using </h1>
+        <div class="row ">
+            <div class="col-sm-4 col-md-4 ">
+                <img src="https://media.zigcdn.com/media/model/2017/Aug/jeep-left_320x160.jpg" alt=" " srcset=" " id="icon ">
+                <h4>latest Cars</h4>
+            </div>
+            <div class="col-sm-4 col-md-3 ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmpL4MjVrg11MXpq-5tGXMvrZFLl4AlkDM82zBfLHM_Tdh116G" alt=" " srcset=" " id="icon ">
+                <h4>Latest cars</h4>
+            </div>
+            <div class="col-sm-4 col-md-5 ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNXGw6ri1BERZrNCG636Y0UbMhSmf9GMssPFRMp8uTDGlEozgq" alt=" " srcset=" " id="icon ">
+                <h4>Latest cars</h4>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="row ">
+        <div class="container ">
+            <div class="col-md-6 ">
+                <h4>Best Engine , Horse Power</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio de leniti, dignissimos corrupti commodi sint minim a hic distinctio voluptatum unde perferendis Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos maiores
+                    qui, nulla iusto facere nostrum non corporis animi fugiat dicta, totam ut blanditiis impedit reiciendis hic cumque iure ipsum numquam. est quisquam? Illum neque eligendi expedita, libero impedit deleniti harum.</p>
+            </div>
+            <div class="col-md-6 ">
+                <img src="https://storage.googleapis.com/gtspirit/uploads/2015/09/Forza-6-Ford-GT.jpg" alt=" " srcset=" " class="img-responsive ">
+            </div>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="container ">
+            <div class="col-md-3 col-sm-6 ">
+                <h4>Built With Powerful Engine</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, impedit! Laboriosam, est! Minus laboriosam officia et sint dolorem, molestiae cupiditate maxime dolores doloribus, quod vitae eveniet, voluptatum animi dicta accusantium!</p>
+            </div>
+            <div class="col-md-3 col-sm-6 ">
+                <img src="http://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=http%3a%2f%2fcdni.autocarindia.com%2fFeatures%2fDSC_6133-copy.jpg&h=872&w=578&c=0" alt=" " srcset=" " class="img-responsive ">
+            </div>
+            <div class="col-md-3 col-sm-6 ">
+                <h4>This is powerful</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab odio laboriosam quis? Expedita non qui accusamus consectetur, ab rerum dolores obcaecati quisquam excepturi adipisci minus id, voluptatem ad modi voluptatum!</p>
+            </div>
+            <div class="col-md-3 col-sm-6 ">
+                <img src="http://sm.pcmag.com/pcmag_in/guide/t/the-best-h/the-best-high-tech-cars-of-2017_4xnh.jpg" alt=" " srcset=" " class="img-responsive ">
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <h4><a href="#hidden" data-toggle="collapse">Learn More About Boostrap ?</a></h4>
+        <div class="row">
+            <div class="container">
+                <div class="collapse" id="hidden">
+                    <h4>Cool Thing about bootstrap</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio de leniti, dignissimos corrupti commodi sint minim a hic distinctio voluptatum unde perferendis Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos maiores
+                        qui, nulla iusto facere nostrum non corporis animi fugiat dicta, totam ut blanditiis impedit reiciendis hic cumque iure ipsum numquam. est quisquam? Illum neque eligendi expedita, libero impedit deleniti harum.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
