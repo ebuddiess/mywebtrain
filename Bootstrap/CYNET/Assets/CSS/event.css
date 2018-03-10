@@ -1,0 +1,129 @@
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+p {
+    font-size: 24px;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 400px;
+    background-image: url(http://d2ck0sxsjau14o.cloudfront.net/wp-content/uploads/2016/03/Playing-computer-games-by-artubr.jpg);
+}
+
+.events {
+    color: black;
+    margin: 10px;
+    height: 350px;
+    padding: 20px;
+    background: rgb(39, 243, 141);
+}
+
+.aimtogame {
+    background: rgb(233, 143, 233);
+}
+
+.mystery {
+    background: rgb(253, 141, 141);
+}
+
+.web {
+    background: rgb(45, 247, 220);
+}
+
+.code {
+    background-color: skyblue;
+}
+
+.events-tag {
+    padding: 1px;
+    color: black;
+    width: 100%;
+    background-color: rgb(105, 127, 224);
+    height: 100px;
+}
+
+.events-tag h1 {
+    margin-top: 30px;
+}
+
+img {
+    margin-top: 10px;
+    height: 350px;
+    width: 100%;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-default {
+    background: black;
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: rgb(255, 253, 253);
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+@media (max-width:700px) {
+    .navbar-header {
+        padding-left: 10px;
+    }
+    .navbar-inverse .navbar-brand {
+        font-size: 20px;
+        color: white;
+    }
+    .navbar-inverse .navbar-nav>li {
+        padding: 10px;
+        font-size: 1.5em;
+    }
+    .container-fluid>.navbar-collapse,
+    .container-fluid>.navbar-header,
+    .container>.navbar-collapse,
+    .container>.navbar-header {
+        margin: 0;
+    }
+    .header {
+        background-position: top;
+    }
+    .events {
+        height: 400px;
+    }
+}
+
+footer {
+    color: black;
+    padding: 10px;
+    background: rgb(12, 248, 217);
+}
+
+@media (max-width:660px) {
+    .header {
+        width: 110%;
+    }
+    .events-tag {
+        width: 110%;
+    }
+}

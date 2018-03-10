@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register Here</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .row {
+            font-family: 'Inconsolata', monospace;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        h1 {
+            margin-top: 60px;
+            color: black;
+        }
+        
+        .left,
+        .right {
+            padding: 0;
+        }
+        
+        .row .right img {
+            height: 662px;
+            width: 100%;
+        }
+        
+        .row {
+            background-image: url(https://i.pinimg.com/originals/ce/93/37/ce933733a5250c697a8a386f2e7c10d1.jpg);
+        }
+        
+        .left {
+            color: white;
+            padding: 10px;
+        }
+        
+        form {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        
+        input {
+            margin: 10px;
+        }
+        
+        input:focus {
+            color: rgb(32, 25, 25);
+            background: rgb(235, 155, 35);
+        }
+        
+        select {
+            color: black;
+        }
+        
+        input[type='button']:hover {
+            background: black;
+            color: white;
+        }
+        
+        input[type='button'] {
+            animation: buttonmove 1s ease;
+        }
+        
+        .year {
+            font-size: 20px;
+            padding: 10px;
+        }
+        
+        option {
+            padding: 10px;
+        }
+        
+        @media (max-width:980px) {
+            .right {
+                display: none;
+            }
+            .row {
+                background: none;
+                height: 100%;
+            }
+            body {
+                background-image: url(https://i.pinimg.com/originals/ce/93/37/ce933733a5250c697a8a386f2e7c10d1.jpg);
+            }
+        }
+        
+        @keyframes buttonmove {
+            0% {
+                background: rgb(211, 85, 85);
+                width: 10%;
+            }
+            50% {
+                background: bisque;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        
+        .navbar-inverse .navbar-brand {
+            color: white;
+        }
+        
+        .navbar-default {
+            background: black;
+            color: white;
+        }
+        
+        .navbar-default .navbar-nav>li>a {
+            color: white;
+        }
+        
+        .navbar-default .navbar-nav>li>a:hover {
+            color: rgb(255, 253, 253);
+        }
+        
+        .navbar-default .navbar-brand {
+            color: white;
+        }
+        
+        .navbar-default .navbar-nav>li>a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="temporary">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+                    <a class="navbar-brand" href="#">CYNET 2018</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="Home.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="">Rules</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Credit</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-md-5 left">
+            <div class="register-form form-group">
+                <h1 class="register-heading text-center animated bounce">Register Here!</h1><br>
+                <div class="form">
+                    <form method="POST" id="registerForm">
+                        <input class="form-control" type="number" placeholder="Mobile Number" id="phone" name="phone" maxlength="10" required>
+                        <input class="form-control" type="email" placeholder="Email" id="email" name="email" max="100" required>
+                        <div>
+                            <input class="form-control" id="Select-clg" name="college" type="text" required placeholder="College Name">
+
+
+                        </div>
+                        <input class="form-control" type="text" placeholder="Enter College Manually" required>
+                        <input type="text" class="form-control" placeholder="Course" required>
+                        <input type="number" class="form-control" placeholder="Enrollment Number" />
+                        <input type="text" class="form-control" placeholder="Date of Birth(dd-mm-yy)" />
+                        <div class="year">
+                            <select name="year" required>
+<option value="">Year of Graduation</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+</select>
+                        </div>
+                        <input type="button" class="form-control" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-7 right">
+
+            <img src="https://ae01.alicdn.com/kf/HTB1oy2mKpXXXXXHXXXXq6xXFXXXP/3D-Color-Hazy-Rain-Drop-Front-Top-Full-Cover-Vinyl-Decal-Laptop-Skin-For-Apple-Macbook.jpg" alt=" " class=" img-responsive ">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

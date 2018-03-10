@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+h1 {
+    margin-top: 280px;
+    font-size: 120px;
+    color: white;
+}
+
+@keyframes colorchange {
+    0% {
+        color: rgb(255, 115, 0);
+    }
+    20% {
+        color: rgb(221, 40, 221);
+    }
+    30% {
+        color: rgb(241, 221, 241);
+    }
+    40% {
+        color: greenyellow;
+    }
+    50% {
+        color: rgb(253, 249, 24);
+    }
+    60% {
+        color: rgb(22, 40, 221);
+    }
+    80% {
+        color: paleturquoise;
+    }
+    100% {
+        color: white;
+    }
+}
+
+@media (max-width:800px) {
+    h1 {
+        font-size: 90px;
+    }
+}
