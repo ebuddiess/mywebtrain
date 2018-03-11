@@ -1,4 +1,11 @@
+html{
+  overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
 body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     background: rgb(26, 23, 23);
@@ -305,9 +312,13 @@ hr {
 hr:hover {
     border-color: rgb(255, 12, 223);
 }
-
+.pk{
+    transition: transform 1s;
+}
 .pk:hover {
+    transform: translateY(60px);
     color: yellow;
+    cursor: pointer;
 }
 
 @media (max-width:380px) {
@@ -315,8 +326,8 @@ hr:hover {
         right: 200px;
     }
     .navbar-inverse .navbar-header a {
-        display: none;
-    }
+  font-size :10px;    
+}
     .carousel-caption .caption p {
         font-size: 12px;
     }
@@ -326,6 +337,25 @@ hr:hover {
         position: relative;
         bottom: 4px;
     }
+.events p{
+font-size:10px;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: rgb(26, 23, 23);
+}
+
 }
 
 @media (max-width:550px) {
@@ -350,7 +380,7 @@ hr:hover {
         transform: translateY(100px);
     }
     .events {
-        height: 250px;
+        height: 308px;
     }
     .events p {
         font-size: 1em;
@@ -367,6 +397,23 @@ hr:hover {
         position: relative;
         right: 135px;
     }
+html{
+  overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: rgb(26, 23, 23);
+}
+.events p{
+font-size:1.0em
+}
 }
 
 @media (max-width:768px) {
@@ -397,8 +444,8 @@ hr:hover {
     .carousel-caption p {
         font-size: 2.2em;
     }
-    .events {
-        height: 250px;
+   .events {
+        height: 308px;
     }
     .rules-head-container-fluid .container {
         width: 95%;
@@ -421,6 +468,19 @@ hr:hover {
         position: relative;
         right: 135px;
     }
+html{
+  overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: rgb(26, 23, 23);
+}
+
 }
 
 @media (min-width:768px) and (max-width:1315px) {
@@ -446,4 +506,17 @@ hr:hover {
     .contact {
         background-attachment: scroll;
     }
+*{
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: rgb(26, 23, 23);
+}
+html{
+  overflow-x: hidden;
+}
+
 }
