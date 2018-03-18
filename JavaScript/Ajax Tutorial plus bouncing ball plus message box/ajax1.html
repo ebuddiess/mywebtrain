@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax Tutorial</title>
+    <style>
+        .message-box {
+            width: 70%;
+            overflow-x: none;
+            overflow-y: scroll;
+            height: 400px;
+            margin: 10px auto;
+            background: grey;
+        }
+        
+        .message {
+            width: 50%;
+            height: 100px;
+            background: rgb(23, 231, 169);
+            margin: 10px auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .message input {
+            padding: 10px;
+        }
+        
+        button {
+            padding: 10px;
+        }
+        
+        p {
+            background: whitesmoke;
+            width: 96%;
+            border-radius: 8px;
+            padding: 5px;
+            margin: 0;
+            margin-top: 15px;
+            margin-bottom: 2px;
+            margin-left: 3px;
+            position: relative;
+        }
+        
+        p::after {
+            position: absolute;
+            content: "";
+            top: 100%;
+            bottom: 16px;
+            left: 94%;
+            border-bottom: 10px solid #f5f5f500;
+            border-left: 10px solid #ff000000;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #f7f7f7db;
+        }
+        
+        p:hover {
+            background: slategrey;
+            color: "whitesmoke";
+        }
+        
+        .circle {
+            float: right;
+            width: 30px;
+            height: 30px;
+            background: red;
+            animation: bounce 2s ease;
+            animation-iteration-count: infinite;
+            border-radius: 900px;
+            position: relative;
+        }
+        
+        @keyframes bounce {
+            0% {
+                transform: translateY(0px)
+            }
+            50% {
+                transform: translateY(-320px)
+            }
+            100% {
+                transform: translateY(0px)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message-box" id="msg">
+
+    </div>
+    <div class="message">
+        <input type="text" placeholder="Message" class="mess">
+        <button id="button">Send Message</button>
+        <div class="circle">
+
+        </div>
+    </div>
+    </button>
+    <script>
+        var button = document.getElementById("button");
+        var messagebox = document.getElementById("msg");
+        var message = document.querySelector(".mess");
+        button.addEventListener("click", function() {
+            var para = document.createElement("p");
+            var text = document.createTextNode(message.value);
+            para.appendChild(text);
+            messagebox.appendChild(para)
+                /* var xhr = new XMLHttpRequest();
+            xhr.open("GET", "sample.txt", true);
+
+            xhr.onload = function() {
+                if (this.status == 200) {
+                    p.textContent = "";
+                }
+            }
+            xhr.send();
+        }) */
+        })
+    </script>
+</body>
+
+</html>
