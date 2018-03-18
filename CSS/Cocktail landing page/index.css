@@ -1,0 +1,320 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            overflow-x: hidden;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-size: cover;
+            background-origin: border-box;
+            background-attachment: fixed;
+            background-position: top;
+            background-image: url(Assets/thumbnail.jpg);
+            margin: 0;
+        }
+        
+        header {
+            position: relative;
+            width: 100%;
+            height: 600px;
+        }
+        
+        .inner {
+            width: 100%;
+            position: absolute;
+            overflow: hidden;
+            height: 600px;
+            top: 0;
+            left: 0;
+        }
+        
+        video {
+            margin: 0;
+            max-height: auto;
+        }
+        
+        header .layer {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            opacity: 0.42;
+            background-color: rgb(105, 162, 248);
+        }
+        
+        header .content {
+            position: absolute;
+            min-width: 600px;
+            top: 33%;
+            left: 21%;
+            min-height: 200px;
+            opacity: 0.55;
+        }
+        
+        .content h1,
+        p {
+            font-size: 30px;
+            color: white;
+            line-height: 70px;
+            text-align: center;
+        }
+        
+        .content p {
+            font-size: 24px;
+        }
+        
+        header {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+        }
+        
+        section {
+            margin-top: 100px;
+            width: 100%;
+            height: 400px;
+            background: rgba(102, 51, 153, 0.45);
+        }
+        
+        section .container {
+            width: 100%;
+            background: rgba(102, 51, 153, 0.55);
+            height: 400px;
+        }
+        
+        .wrapper {
+            perspective: 900px;
+            position: relative;
+            width: 23%;
+            margin: 10px;
+            float: left;
+            height: 90%;
+            overflow-y: hidden;
+        }
+        
+        .wrapper .card {
+            transition: all 1s ease;
+            width: 90%;
+            height: 85%;
+            margin-top: 30px;
+            margin-left: 20px;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+        
+        .wrapper .left {
+            background: rgb(43, 216, 247);
+        }
+        
+        .wrapper .right {
+            transform: rotateY(180deg);
+            background-image: linear-gradient(to bottom, #7028e4 20%, rgb(97, 226, 224) 100%);
+        }
+        
+        .wrapper:hover .left {
+            opacity: 0.1;
+            transform: rotateY(-180deg);
+        }
+        
+        .wrapper:hover .right {
+            transform: rotateY(0deg);
+        }
+        
+        .wrapper .left .image {
+            width: 100%;
+            height: 50%;
+            background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%), url(Assets/cocktail1.jpg);
+            background-blend-mode: overlay;
+            background-size: cover;
+        }
+        
+        .wrapper .left .content {
+            overflow-y: hidden;
+            box-sizing: border-box;
+            padding: 10px;
+            width: 100%;
+            height: 50%;
+            background-image: linear-gradient(to bottom, #7028e4 20%, rgb(97, 226, 224) 100%);
+        }
+        
+        .wrapper .left .content p {
+            font-size: 16px;
+            height: 20px;
+            width: 100%;
+            color: rgb(255, 255, 255);
+            line-height: 20px;
+            overflow-Y: hidden;
+        }
+        
+        .wrapper .right .button {
+            width: 300px;
+            top: 40%;
+            position: relative;
+            height: 100px;
+        }
+        
+        .wrapper .right .button .button {
+            padding: 15px;
+            position: absolute;
+            left: 29%;
+            top: 30px;
+            width: 100px;
+            height: 50px;
+            color: white;
+            text-align: center;
+            background: rgb(36, 30, 36);
+            border-radius: 20px;
+        }
+        
+        .wrapper .right .button .button:hover {
+            background: whitesmoke;
+            color: black;
+        }
+        
+        footer {
+            background: rgba(70, 227, 248, 0.589);
+            clear: both;
+            color: rgb(27, 22, 22);
+            text-align: center;
+        }
+        
+        footer:hover {
+            background: rgba(0, 0, 0, 0.068);
+        }
+        
+        footer:hover h1 {
+            color: white;
+        }
+        
+        .clipperbox .content h1:hover,
+        p:hover {
+            transition: all 1s;
+            color: rgba(255, 141, 11, 0.993);
+        }
+        
+        .clipperbox .content h1:hover {
+            transition: all 1s;
+            transform: scale(1.2, 1.2);
+        }
+        
+        .product-wrapper {
+            width: 100%;
+            height: 400px;
+            background: rgba(226, 28, 144, 0.521);
+        }
+        
+        .product {
+            float: left;
+        }
+        
+        .product-wrapper .product-part {
+            width: 30%;
+            height: 100%;
+            background-size: cover;
+            background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%), url(Assets/info.jpg);
+            background-blend-mode: screen;
+        }
+        
+        .product-wrapper .product-part h1 {
+            text-align: center;
+            line-height: 400px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .product-wrapper .product-description {
+            width: 70%;
+            height: 100%;
+            background: rgba(252, 33, 44, 0.507);
+        }
+        
+        .product .model-box {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        
+        .pro-wrapper {
+            float: left;
+            position: relative;
+            height: 50%;
+            width: 30%;
+        }
+        
+        .product .product-image {
+            background-size: cover;
+            background-blend-mode: screen;
+            background-image: linear-gradient(to right, #4facfea1 0%, #00f2fe 100%), url(Assets/ck1.webp);
+        }
+        
+        .product .product-value {
+            overflow-Y: hidden;
+            transition: width 1s ease;
+            width: 0%;
+            background: rgba(121, 21, 214, 0.521);
+        }
+        
+        .pro-wrapper:hover .product-value {
+            width: 100%;
+        }
+        
+        .content-value {
+            color: snow;
+            line-height: 200px;
+            text-align: center;
+        }
+        
+        .product .second-image {
+            background-size: cover;
+            background-blend-mode: screen;
+            background-image: linear-gradient(to right, #4facfea1 0%, #00f2fe 100%), url(Assets/ck2.jpg);
+        }
+        
+        .product .third-image {
+            background-size: cover;
+            background-position: center;
+            background-origin: border-box;
+            background-blend-mode: screen;
+            background-image: linear-gradient(to right, #4facfea1 0%, #00f2fe 100%), url(Assets/ck3.jpg);
+        }
+        
+        .extra {
+            width: 94px;
+            background-size: cover;
+            background-blend-mode: screen;
+            background-image: linear-gradient(to right, #4facfea1 0%, #00f2fe 100%), url(Assets/extra.jpg);
+        }
+        
+        .product .fourth-image {
+            background-size: contain;
+            background-position: center;
+            background-origin: border-box;
+            background-blend-mode: screen;
+            background-image: linear-gradient(to right, #4facfea1 0%, #00f2fe 100%), url(Assets/ck4.jpg);
+        }
+        
+        .product .fifth-image {
+            background-size: cover;
+            background-position: center;
+            background-origin: border-box;
+            background-blend-mode: screen;
+            background-image: linear-gradient(to right, #4facfea1 0%, #00f2fe 100%), url(Assets/ck5.jpg);
+        }
+        
+        .product .six-image {
+            background-size: contain;
+            background-position: cover;
+            background-origin: border-box;
+            background-blend-mode: screen;
+            background-image: linear-gradient(to right, #4facfea1 0%, #00f2fe 100%), url(Assets/c6.jpg);
+        }
+        
+        .extra:hover {
+            transition: all 1s ease;
+            background: rgba(6, 238, 255, 0.74);
+        }
+        
+        footer {
+            background: rgba(239, 142, 248, 0.671);
+            padding: 30px;
+        }
