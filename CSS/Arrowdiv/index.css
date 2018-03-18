@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    background: rgb(199, 188, 188);
+}
+
+.box {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.left {
+    z-index: 999;
+    position: relative;
+    background-color: aqua;
+}
+
+.left:after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 100%;
+    border-left: 20px rgb(13, 239, 247) solid;
+    border-right: 20px transparent solid;
+    border-top: 20px transparent solid;
+    border-bottom: 20px transparent solid;
+}
+
+.right {
+    background-color: rgb(208, 255, 164);
+}
