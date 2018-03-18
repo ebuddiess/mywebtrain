@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <!-- navbarstarted -->
     <div class="navheader">
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
@@ -35,11 +36,11 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="">Rules</a></li>
-                        <li><a href="register.html">Register</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Credit</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#rules">Rules</a></li>
+                        <li><a href="#register">Register</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#credit">Credit</a></li>
                     </ul>
                 </div>
             </div>
@@ -60,22 +61,22 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="item active first">
-                <img src="https://blog.qwaya.com/hs-fs/hub/420719/file-1928170332-jpg/blog-files/featured-images/Finding-your-audience-on-Facebook-INFOGRAPHIC.jpg" alt="" srcset="" class="img-responsive" style="width:100%;">
+                <img class="front" src="https://blog.qwaya.com/hs-fs/hub/420719/file-1928170332-jpg/blog-files/featured-images/Finding-your-audience-on-Facebook-INFOGRAPHIC.jpg" alt="" srcset="" class="img-responsive" style="width:100%;">
                 <div class="carousel-caption">
                     <div class="caption">
                         <h1>CYNET 2k18</h1>
                         <p>Tech Events With Intresting Hurdels</p>
                     </div>
-                    <button type="button" class="btn btn-default">REGISTER</button>
-                    <button type="button" class="btn btn-default">EVENTS</button>
+                    <button type="button" class="btn btn-default"><a href="#register">REGISTER</a></button>
+                    <button type="button" class="btn btn-default"><a href="#events">EVENTS</a></button>
                 </div>
                 <!--END ACTIVE -->
             </div>
             <div class="item">
-                <img src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4zx2oCU_lijl3z600/hacker-programmer-working-with-data-code-in-a-dark-room-hackers-desk_r5btgt1bl_thumbnail-full01.png" alt="" srcset="" class="img-responsive">
+                <img class="second" src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4zx2oCU_lijl3z600/hacker-programmer-working-with-data-code-in-a-dark-room-hackers-desk_r5btgt1bl_thumbnail-full01.png" alt="" srcset="" class="img-responsive">
             </div>
             <div class="item">
-                <img src="https://wallpaper.wiki/wp-content/uploads/2017/05/High-Tech-HD-Backgrounds.jpg" alt="" srcset="" style="width:100%;" class="img-responsive">
+                <img class="third" src="https://wallpaper.wiki/wp-content/uploads/2017/05/High-Tech-HD-Backgrounds.jpg" alt="" srcset="" style="width:100%;" class="img-responsive">
             </div>
         </div>
         <!-- started slider controls -->
@@ -96,8 +97,13 @@
     <div class="row-outer">
         <div class="row">
             <div class="col-md-6">
-                <div class="events TreasureHunt" data-aos="fade-up-right">
+                <div id="events" class="events TreasureHunt" data-aos="fade-up-right">
                     <h1>Treasure Hunt</h1>
+                    <h3>
+                        <a href="#trules">
+                            <u>Treasure Hunt Rules</u>
+                        </a>
+                    </h3>
                     <p>In this event the participants have to solve the IT riddle which would lead them to some clue. The participants are supposed to reach the treasure with the help of these clues. The team will get the next clue from the place where they
                         got the last clue. The event has three rounds. This is a team event and one team can have 2 participants.</p>
                 </div>
@@ -111,6 +117,11 @@
             <div class="col-md-6">
                 <div class="events aimtogame" data-aos="fade-right">
                     <h1>Aim to Game</h1>
+                    <h3>
+                        <a href="#aimrules">
+                            <u>Aim to Game Rules</u>
+                        </a>
+                    </h3>
                     <p>In this event the participants have to solve the IT riddle which would lead them to some clue. The participants are supposed to reach the treasure with the help of these clues. The team will get the next clue from the place where they
                         got the last clue. The event has three rounds. This is a team event and one team can have 2 participants.</p>
                 </div>
@@ -124,6 +135,11 @@
             <div class="col-md-6">
                 <div class="events mystery" data-aos="flip-up">
                     <h1>Mystery Room</h1>
+                    <h3>
+                        <a href="#mysteryrules">
+                            <u>Mystery Room  Rules</u>
+                        </a>
+                    </h3>
                     <p>Mystery Rooms is a challenging race against the clock where the team of 3 players will participate in the game for two rounds. The game participants need to apply deductive reasoning, aptitude and logic to escape. It is the smartest,
                         not the strongest, who escapes faster.</p>
                 </div>
@@ -138,6 +154,11 @@
             <div class="col-md-6">
                 <div class="events web" data-aos="fade-right" data-aos-offset="300">
                     <h1>WEB WEAVER</h1>
+                    <h3>
+                        <a href="#webrules">
+                            <u>Web Weaver rules</u>
+                        </a>
+                    </h3>
                     <p>The goal of a web page is to convey information in a manner useful to the reader, similar to the goal in writing a paper. How you convey the information can increase readers' interest as well as their knowledge. It is a contest that
                         assists your unique, creative, radical and commercial approach to webpage designing. The event provides a forum to talented students to display their prowess in the same.</p>
                 </div>
@@ -152,8 +173,32 @@
             <div class="col-md-6">
                 <div class="events code" data-aos="zoom-in-left">
                     <h1>Code Breaker</h1>
+                    <h3>
+                        <a href="#cbrules">
+                            <u>Code Breaker rules</u>
+                        </a>
+                    </h3>
                     <p>Code Breaker is a platform to help programmers make it big in the world of algorithms .This event deals with the logical thinking and basic programming skills. There will be two rounds. The participants will be provided with an algorithm
                         and they are supposed to develop the relevant code snippet. This would be a team event. The team would comprise of two studen</p>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="zoom-in-right">
+                <img src="Assets/img/programmer.jpg" alt=" ">
+            </div>
+        </div>
+        <!--   //digital mania -->
+        <div class="row ">
+            <div class="col-md-6">
+                <div class="events digi" data-aos="zoom-in-left">
+                    <h1>Digital Mania</h1>
+                    <h3>
+                        <a href="#digrules">
+                            <u>Digital Mania rules</u>
+                        </a>
+                    </h3>
+                    <p>This event deals with the concept and creativity of a student in developing an innovative image out of provided material based on a theme. Participants should have variety of thoughts to show their thinking and imagination in a single
+                        picture. In this event, participants are to be provided with some pictures and from that collection of picture participants have to make a poster based on the theme given by the coordinators.
+                    </p>
                 </div>
             </div>
             <div class="col-md-6" data-aos="zoom-in-right">
@@ -165,7 +210,7 @@
     <!-- rules styling started -->
     <div class="container-fluid rules-head-container-fluid">
         <div class="rules-head">
-            <h1 class="text-center">GAME RULES</h1>
+            <h1 class="text-center" id="rules">GAME RULES</h1>
             <h3 class="text-center">Rules Should be Followed</h3>
         </div>
         <div class="container rules-para">
@@ -181,7 +226,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="container treasure-rules event-rulebook ">
-                    <h1>Treasure Hunt Rule And Guidelines</h1>
+                    <h1 id="trules">Treasure Hunt Rule And Guidelines</h1>
                     <h3>The participants should have good thinking capability and they should be quick enough to figure out the clues given in form of IT riddles.</h3>
                     <p>
                         <ol>
@@ -203,7 +248,7 @@
 
             <!--  aim to game rules -->
             <div class="col-md-6">
-                <div class="container aim-rules  event-rulebook">
+                <div id="aimrules" class="container aim-rules  event-rulebook">
                     <h1>Aim to Game Rule And Guidelines</h1>
                     <h3>Participants should have the basic knowledge about operating the system</h3>
                     <p>
@@ -231,7 +276,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <div class="container mysteryroom-rules event-rulebook">
+                <div id="mysteryrules" class="container mysteryroom-rules event-rulebook">
                     <h2>Rules for "Mystery Rooms"</h2>
                     <p>Mystery Rooms is a challenging race against the clock where the team of 2 players will participate in the game for two rounds.The game participants need to apply deductive reasoning, aptitude and logic to escape. It is the smartest,
                         not the strongest, who escapes faster.</p>
@@ -271,7 +316,7 @@
             </div>
             <!-- //weaver started -->
             <div class="col-md-6">
-                <div class="container weaver event-rulebook">
+                <div id="webrules" class="container weaver event-rulebook">
                     <h2>Rules for "Web Weaver"</h2>
                     <p>The teams registering themselves should have a good knowledge about website designing & should be able to use the software’s provided efficiently.</p>
                     <p>
@@ -328,7 +373,7 @@
             <div class="col-md-6">
                 <div class="container codebreaker event-rulebook">
                     <h2>Rules for "Code Breaker"</h2>
-                    <p>Participants should have a thorough knowledge and understanding of the concepts and should possess an insight to write the code in either C/ C++/Java. The algorithm for the code snippet would be provided by the coordinators. The participants
+                    <p id="cbrules">Participants should have a thorough knowledge and understanding of the concepts and should possess an insight to write the code in either C/ C++/Java. The algorithm for the code snippet would be provided by the coordinators. The participants
                         also get the opportunity to showcase their brilliance by understanding the algorithm. Each algorithm will be tested based on the critical test data. The students would be judged on the basis of their coding skills.</p>
                     <p>
                         <ol>
@@ -375,7 +420,7 @@
             </div>
             <!-- //weaver started -->
             <div class="col-md-6">
-                <div class="container digitalmania event-rulebook">
+                <div id="digrules" class="container digitalmania event-rulebook">
                     <h2>Rules for "Digital Mania"</h2>
                     <p>Participants should have a thorough knowledge of software’s given in the below list. Participants should have a creative mind to design the poster based on a theme given by the coordinators.</p>
                     <p>
@@ -447,15 +492,68 @@
         </div>
     </div>
     <!-- cordi ended -->
+    <!-- register started -->
+
+    <div class="row register">
+        <div class="col-md-12">
+            <div class="register-form form-group">
+                <h1 class="register-heading text-center animated bounce">Register Here!</h1>
+                <br>
+                <div class="form ">
+                    <form method="POST" id="register">
+                        <input class="form-control" type="text" placeholder="Enter Your Name" id="phone" name="phone" maxlength="10" required>
+
+                        <input class="form-control" type="text" placeholder="Enter College Manually" required>
+                        <input type="text" class="form-control" placeholder="Course" required>
+
+                        <div class="year ">
+                            <h3>Graduation Year</h3>
+                            <select name="year" required>
+                            <option value="">Year of Graduation</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="Present">Present</option>
+<option value="Present">Not Applicable</option>
+                        </select>
+                        </div>
+                        <div class="year">
+
+                            <h3>Choose Event</h3>
+                            <select name="Event" required>
+        <option value="">Treasure hunt</option>
+        <option value="2018">Aim to game</option>
+        <option value="2017">Mystery room</option>
+        <option value="2016">Web Weaver</option>
+        <option value="2015">Code Breaker</option>
+        <option value="Present">Digital Mania</option>
+    </select>
+
+                            <div class="feedback">
+                                <h3>Feedback if any ?</h3>
+                                <textarea name="YOUR FEEDBACK" id="feedback" cols="100" rows="5" placeholder="FEEDBACK">
+
+    </textarea>
+                            </div>
+                        </div>
+
+                        <input type="button" class="form-control" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- contact us -->
-    <div class="container-fluid contact">
+    <div class="container-fluid contact" id="contact">
         <div class="container">
             <h1>Contact Us</h1>
             <h2>Jagannath International Management School</h2>
             <h3>OCF, Pocket 9, Sector-B, Vasant Kunj, New Delhi, Delhi 110070 Contact: 001 4061 9300</h3>
         </div>
         <hr>
-        <h3 class="text-center pk">Designed & Develeoped By Puneet BCA 4 M</h3>
+        <h3 class="text-center pk" id="credit">Designed & Develeoped By Puneet &copy ARTV 2019</h3>
     </div>
     <script src="Assets/lib/index.js "></script>
 </body>

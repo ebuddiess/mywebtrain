@@ -1,9 +1,11 @@
-html{
-  overflow-x: hidden;
+html {
+    overflow-x: hidden;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
+
 body {
     overflow-x: hidden;
     margin: 0;
@@ -18,19 +20,37 @@ body {
 
 .navbar-inverse .navbar-nav>li>a {
     color: white;
+    font-size: 1.6em;
+}
+
+.navbar-inverse .navbar-nav>li:hover {
+    cursor: pointer;
+}
+
+.navbar-inverse .navbar-brand {
+    font-size: 2em;
 }
 
 nav.navbar {
+    padding: 5px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
 
 .navbar.trans {
-    font-size: 20px;
+    font-size: 11px;
     color: rgb(252, 250, 250);
     background-position: top left;
     background-attachment: fixed;
-    background-image: url(https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Photos-Black-Velvet-HD-PIC-WPC009208.png) !important;
+    background-color: #101010;
+}
+
+button a {
+    color: white;
+}
+
+button a:hover {
+    text-decoration-line: none;
 }
 
 
@@ -38,6 +58,11 @@ nav.navbar {
 
 
 /* carousel styling started */
+
+.carousel-inner {
+    overflow-y: hidden;
+    height: 410px;
+}
 
 .navplusslider {
     padding: 0;
@@ -51,6 +76,11 @@ nav.navbar {
 .carousel-caption h1,
 p {
     color: black;
+}
+
+.front,
+.second {
+    transform: translateY(-86px);
 }
 
 .carousel-caption h1 {
@@ -312,12 +342,90 @@ hr {
 hr:hover {
     border-color: rgb(255, 12, 223);
 }
-.pk{
+
+.pk {
     transition: transform 1s;
 }
+
 .pk:hover {
     transform: translateY(60px);
     color: yellow;
+    cursor: pointer;
+}
+
+form {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+input {
+    margin: 10px;
+}
+
+input:focus {
+    color: rgb(32, 25, 25);
+    background: rgb(235, 155, 35);
+}
+
+select {
+    padding: 2px;
+    color: black;
+    border-radius: 10px;
+}
+
+textarea {
+    border-radius: 10px;
+    width: 100%;
+}
+
+input[type='button']:hover {
+    background: black;
+    color: white;
+}
+
+input[type='button'] {
+    width: 99%;
+    animation: buttonmove 1s ease;
+}
+
+.register {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+.year {
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 2px;
+}
+
+select {
+    font-size: 18px;
+    width: 100%;
+}
+
+#feedback {
+    margin-top: 5px;
+}
+
+.register-heading {
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+.form h3 {
+    margin-left: 6px;
+}
+
+.digi {
+    background: rgb(255, 242, 170);
+}
+
+input[type='text'] {
+    width: 99%;
+}
+
+u {
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -326,8 +434,8 @@ hr:hover {
         right: 200px;
     }
     .navbar-inverse .navbar-header a {
-  font-size :10px;    
-}
+        font-size: 10px;
+    }
     .carousel-caption .caption p {
         font-size: 12px;
     }
@@ -337,25 +445,49 @@ hr:hover {
         position: relative;
         bottom: 4px;
     }
-.events p{
-font-size:10px;
-}
-
-html{
-  overflow-x: hidden;
-}
-
-*{
-    box-sizing: border-box;
-}
-
-body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    background: rgb(26, 23, 23);
-}
-
+    .events p {
+        font-size: 10px;
+    }
+    html {
+        overflow-x: hidden;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        background: rgb(26, 23, 23);
+    }
+    .contact {
+        background-color: black;
+        background-image: none;
+        background-attachment: scroll;
+    }
+    .contact h1,
+    h2,
+    h3 {
+        font-size: 15px;
+    }
+    .cordi-back {
+        margin: 1px;
+        display: none;
+    }
+    .contact .pk,
+    hr:hover {
+        transition: none;
+    }
+    .contact hr {
+        display: none;
+    }
+    .carousel-inner {
+        height: 300px;
+    }
+    .carousel-inner .second,
+    .third {
+        transform: translateY(100px);
+    }
 }
 
 @media (max-width:550px) {
@@ -397,23 +529,28 @@ body {
         position: relative;
         right: 135px;
     }
-html{
-  overflow-x: hidden;
-}
-
-*{
-    box-sizing: border-box;
-}
-
-body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    background: rgb(26, 23, 23);
-}
-.events p{
-font-size:1.0em
-}
+    html {
+        overflow-x: hidden;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        background: rgb(26, 23, 23);
+    }
+    .events p {
+        font-size: 1.0em
+    }
+    .carousel-inner .second,
+    .third {
+        transform: translateY(100px);
+    }
+    .navbar-toggle {
+        transform: translateY(-3px);
+    }
 }
 
 @media (max-width:768px) {
@@ -444,7 +581,7 @@ font-size:1.0em
     .carousel-caption p {
         font-size: 2.2em;
     }
-   .events {
+    .events {
         height: 308px;
     }
     .rules-head-container-fluid .container {
@@ -468,19 +605,31 @@ font-size:1.0em
         position: relative;
         right: 135px;
     }
-html{
-  overflow-x: hidden;
-}
-*{
-    box-sizing: border-box;
-}
-body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    background: rgb(26, 23, 23);
-}
-
+    html {
+        overflow-x: hidden;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        background: rgb(26, 23, 23);
+    }
+    .carousel-inner .front,
+    .second,
+    .third {
+        transform: translateY(100px);
+    }
+    .caption h1,
+    p,
+    button {
+        transform: translateY(60px);
+    }
+    .navbar-toggle {
+        transform: translateY(-3px);
+    }
 }
 
 @media (min-width:768px) and (max-width:1315px) {
@@ -506,17 +655,29 @@ body {
     .contact {
         background-attachment: scroll;
     }
-*{
-    box-sizing: border-box;
-}
-body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    background: rgb(26, 23, 23);
-}
-html{
-  overflow-x: hidden;
-}
-
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        background: rgb(26, 23, 23);
+    }
+    html {
+        overflow-x: hidden;
+    }
+    .navbar-inverse .navbar-nav>li>a {
+        color: white;
+        font-size: 1em;
+    }
+    .navbar-inverse .navbar-brand {
+        font-size: 1em;
+    }
+    .carousel-inner .front {
+        transform: translateY(100px);
+    }
+    .carousel-caption {
+        transform: translateY(-110px);
+    }
 }
