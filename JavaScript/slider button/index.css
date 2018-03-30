@@ -1,0 +1,87 @@
+.outer {
+    width: 300px;
+    height: 100px;
+    margin: 100px 40%;
+    border-radius: 60px;
+    padding: 1px;
+    background: rgb(230, 220, 204);
+}
+
+.inner {
+    padding: 1px;
+    width: 94%;
+    height: 80%;
+    margin: 10px auto;
+    border-radius: 60px;
+    background: rgba(165, 156, 143, 0.685);
+}
+
+.outer:hover {
+    box-shadow: 2px 2px 10px 3px grey;
+}
+
+.circle {
+    width: 30%;
+    transition: transform 1s;
+    height: 90%;
+    border: 1px solid rgba(128, 128, 128, 0.678);
+    border-radius: 80px;
+    margin: 4px 8px;
+    background: #46d8c5;
+}
+
+.circle:hover {
+    cursor: pointer;
+}
+
+h3 {
+    margin: 25px 0;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.move {
+    transform: translateX(180px);
+}
+
+.outerlayer {
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    background: aquamarine;
+}
+
+.formgroup {
+    padding: 10px;
+}
+
+.formgroup label {
+    margin-right: 100px;
+}
+
+input:not(#button) {
+    width: 300px;
+    padding: 5px;
+}
+
+#username {
+    margin-left: -6px;
+}
+
+#button {
+    padding: 3px;
+}
+
+.info {
+    display: none;
+}
+
+#sucess {
+    text-align: center;
+}
+
+.outerlayer {
+    border: 2px dashed grey;
+    transition: opacity 0.71s linear;
+}

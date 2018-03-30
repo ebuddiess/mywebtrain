@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="circle">
+                <h3>Activate</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="outerlayer">
+        <form>
+            <div class="formgroup">
+                <label>UserName</label>
+                <input type="text" id="username" placeholder="username">
+            </div>
+            <div class="formgroup">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="password">
+                <input type="button" id="button" value="login">
+                <div class="info">
+                    <h3>Attempt Remaining : <span id="no">3</span></h3>
+                </div>
+                <p id="sucess"></p>
+            </div>
+        </form>
+    </div>
+    <script>
+        var flag = 0;
+        var circle = document.querySelector(".circle");
+        var username = document.querySelector("#username")
+        var password = document.querySelector("#password")
+        var button = document.querySelector("#button")
+        var sucess = document.querySelector("#sucess")
+        var no = document.querySelector("#no")
+        var info = document.querySelector(".info")
+        circle.addEventListener("click", function() {
+            if (flag == 0) {
+                circle.classList.add("move");
+                flag = 1;
+                setTimeout(function() {
+                    circle.style.background = "#3fdba7"
+                    document.querySelector(".outerlayer").style.opacity = "0"
+                    document.querySelector("h3").textContent = "Deactivate"
+                }, 300)
+            } else {
+                circle.style.background = "#46d8c5"
+                circle.classList.remove("move");
+                flag = 0;
+                setTimeout(function() {
+                    document.querySelector("h3").textContent = "Activate"
+                    document.querySelector(".outerlayer").style.opacity = "1"
+                }, 300)
+            }
+        })
+        var counter = 3;
+        button.addEventListener("click", function() {
+            if ((username.value == "") || (password.value == "")) {
+                alert("empty values");
+            } else {
+                if (data.validate(username.value, password.value)) {
+                    sucess.textContent = "Sucessfully Login"
+                } else {
+                    if (counter === 3) {
+                        sucess.textContent = ""
+                        info.style.display = "block";
+                        counter = 2;
+                    } else if (counter == 2) {
+                        no.textContent = counter;
+                        counter = 1;
+                    } else if (counter == 1) {
+                        no.textContent = counter;
+                        counter = 0;
+                    } else {
+                        button.disabled = "true"
+                        info.innerHTML = "<h3 style='text-align:center'> You Account is Locked </h3>"
+                    }
+                }
+            }
+        })
+
+        var data = {
+            username: "puneet",
+            password: 123,
+            validate: function(username, password) {
+                if ((this.username == username) && (this.password == password)) {
+                    return true;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
