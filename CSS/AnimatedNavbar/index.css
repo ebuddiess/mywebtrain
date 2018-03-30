@@ -1,0 +1,53 @@
+li {
+    color: white;
+    width: 60px;
+    display: inline-block;
+    background: black;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    transition: all 0.31s;
+    list-style-type: none;
+    transform: translateY(14px)
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    overflow: hidden;
+}
+
+li::before {
+    content: "";
+    width: 100%;
+    top: -17px;
+    left: 0;
+    border-bottom: 2px solid black;
+    position: absolute;
+    transition: all 0.21s;
+}
+
+li::after {
+    content: "";
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+    border-bottom: 2px solid black;
+    position: absolute;
+    transition: all 0.21s;
+}
+
+li:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+li:hover::before {
+    top: -2px;
+}
+
+li:hover::after {
+    bottom: -4px;
+}
