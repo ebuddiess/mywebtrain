@@ -1,0 +1,19 @@
+<% include partials/header %>
+
+<form action="/users/add" method="POST">
+<input type="number" name="id" placeholder="Id">
+<input type="text" name="name" placeholder="name">
+<input type="number" name="age" placeholder="age">
+<input type="submit" value="Add User">
+</form>
+
+
+<h1>Details of Our users </h1>
+<ul>
+<% data.forEach(function(founduser){ %> 
+<li>Id:<%= founduser.id %></li>
+<li>Name:<%= founduser.name %></li>
+<li>Age:<%= founduser.age %></li>
+ <% }) %>
+</ul>
+<% include partials/footer %>
