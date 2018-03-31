@@ -1,0 +1,77 @@
+.outer {
+    padding: 20px;
+    margin: 120px auto;
+    max-width: 45%;
+    height: 400px;
+    background: rgb(240, 139, 139);
+}
+
+.box {
+    transition: all 1s;
+}
+
+.inner {
+    transition: all 1s;
+}
+
+.topbox {
+    line-height: 100px;
+    font-size: 88px;
+    text-align: center;
+    float: left;
+    width: 30%;
+    height: 100px;
+    background: rgb(223, 242, 243);
+    margin: 2px;
+}
+
+.inner {
+    margin-left: 20px;
+}
+
+.middlebox {
+    line-height: 100px;
+    font-size: 88px;
+    text-align: center;
+    float: left;
+    width: 30%;
+    height: 100px;
+    background: rgb(248, 255, 255);
+    margin: 2px;
+}
+
+.bottombox {
+    line-height: 100px;
+    font-size: 88px;
+    text-align: center;
+    float: left;
+    width: 30%;
+    height: 100px;
+    background: rgb(248, 255, 255);
+    margin: 2px;
+}
+
+.box {
+    cursor: pointer;
+}
+
+.inner {
+    padding: 1px;
+}
+
+.gameinfo {
+    box-sizing: border-box;
+    padding: 4px;
+    margin: 0;
+    line-height: 100px;
+    color: white;
+    width: 100%;
+    height: 100px;
+    background: rgba(214, 180, 236, 0.925);
+    clear: both;
+}
+
+h3 {
+    color: black;
+    margin: 0;
+}
