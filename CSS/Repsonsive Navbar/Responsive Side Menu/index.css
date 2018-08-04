@@ -1,0 +1,151 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    overflow: hidden;
+    height: 63px;
+    background-image: linear-gradient(-45deg, rgba(165, 62, 168, 0.459), rgb(3, 20, 221))
+}
+
+.navbar a {
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    display: block;
+    color: whitesmoke;
+}
+
+.navbar ul li a::before {
+    transition: all 0.11s;
+    color: white;
+    content: "";
+    height: 2px;
+    left: 4px;
+    right: 2px;
+    top: -2px;
+    position: absolute;
+    background: white;
+}
+
+.navbar ul li a::after {
+    transition: all 0.11s;
+    color: white;
+    content: "";
+    height: 2px;
+    left: 4px;
+    right: 2px;
+    bottom: -2px;
+    position: absolute;
+    background: white;
+}
+
+.navbar ul li a:hover::before {
+    top: 6px;
+}
+
+.navbar ul li a:hover::after {
+    bottom: 6px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 8px 0 0 0;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    background: rgba(0, 0, 0, 0.733);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    transition: 0.93s;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    padding: 10px 10px 10px 30px;
+}
+
+.side-nav a:not(.btn-close) {
+    border-bottom: 0.71px solid rgba(128, 128, 128, 0.315);
+}
+
+.side-nav a:hover {
+    background: rgb(214, 72, 143);
+}
+
+.side-nav .btn-close {
+    text-align: center;
+    padding: 10px;
+    transform: translate(0px, -40px)
+}
+
+#main {
+    transition: margin-left 0.5s;
+}
+
+span {
+    display: none;
+}
+
+#main {
+    perspective: 810px;
+    padding: 20px;
+}
+
+#main h1 {
+    box-shadow: 2px 0 2px 2px rgba(128, 128, 128, 0.322);
+    cursor: pointer;
+    transition: all 1s;
+    border: 1px solid grey;
+    position: relative;
+    width: 90%;
+    padding: 20px;
+    background: aquamarine;
+}
+
+#main h1:hover {
+    transform: translateZ(-100px);
+}
+
+#main h1::after {
+    content: "";
+    position: absolute;
+    border-top: 20px aquamarine solid;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    bottom: -33px;
+    right: 20px;
+}
+
+body {
+    background: rgba(199, 191, 192, 0.425);
+    overflow-x: hidden;
+}
+
+@media(max-width:768px) {
+    span {
+        display: block;
+    }
+    .navbar-nav {
+        display: none;
+    }
+}

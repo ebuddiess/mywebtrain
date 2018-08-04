@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Service</a>
+            </li>
+            <li>
+                <a href="">Contact us</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="toggler">
+        <span class="open-slide" onclick="togglenav()">
+        <a href="#">
+            <svg width="30" height="30">
+                <path d="M0,5 l30,0" stroke="white" stroke-width="5" />
+                <path d="M0,14 l30,0" stroke="white" stroke-width="5" />
+                <path d="M0,23 l30,0" stroke="white" stroke-width="5" />
+            </svg>
+        </a>
+    </span>
+    </div>
+
+    <div id="side-menu" class="toggle-nav">
+        <a href="#" class="btn-close" onclick="closetoggle()">&times;</a>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis animi praesentium nisi mollitia facilis, explicabo officia voluptas quibusdam culpa deserunt, suscipit corrupti nam obcaecati aperiam maxime voluptatem, ut minima. Magni cumque provident
+        assumenda autem explicabo quis nam consectetur fugiat accusamus similique? Consequuntur fuga debitis molestias. Nesciunt inventore dolorem officiis numquam dicta ipsa quasi, necessitatibus enim aperiam sit mollitia earum? Animi tempora nam voluptatem.
+        Dolores sapiente perspiciatis voluptates voluptate eaque. Ipsum, earum nobis blanditiis dicta qui unde vitae quia, quas quasi in soluta autem asperiores laborum totam temporibus exercitationem delectus nulla expedita repellat explicabo repudiandae
+        quidem, ipsam eum quis? Alias eum ipsa laudantium numquam nihil libero, impedit perferendis? Assumenda, quia? Facilis labore nesciunt quam numquam maxime. Unde, perspiciatis fugit. Repellendus autem corrupti facere perspiciatis labore consequuntur
+        similique necessitatibus, beatae repellat nulla vero quibusdam provident eligendi distinctio expedita ea soluta asperiores iste dicta aliquid mollitia! In dolore unde magnam! Quas incidunt praesentium possimus deserunt provident saepe. Consectetur
+        error incidunt voluptate quia eveniet suscipit assumenda placeat praesentium ipsum eligendi quis consequuntur, magnam excepturi itaque sit quos nobis? Quo, molestiae, officiis distinctio placeat similique iusto hic atque, quia quam modi labore.
+        Voluptas sit cupiditate in. Fugit impedit consectetur explicabo vitae recusandae officiis consequuntur doloribus consequatur corrupti architecto. Suscipit, unde repudiandae tenetur cumque reiciendis, magnam et laborum iste nulla facilis quis magni
+        voluptatum. Nostrum quisquam maiores aperiam, eveniet pariatur ut inventore placeat repellendus amet adipisci est nisi cupiditate itaque fugit praesentium sed, provident obcaecati. Quibusdam provident veniam ab vitae fuga quis ducimus praesentium
+        nemo modi nostrum blanditiis iusto aliquam at dolore, non unde, error impedit tenetur rem maiores vero cum quisquam. Impedit praesentium illum explicabo quae in, adipisci perferendis, facilis quibusdam mollitia eius error consectetur fuga ipsam.
+        Libero nesciunt suscipit non eum incidunt quas vero amet temporibus illum, aperiam reprehenderit excepturi necessitatibus explicabo nobis praesentium! Autem ea ducimus cumque aliquam perspiciatis reiciendis totam animi possimus sapiente repellendus.
+        Totam architecto ipsa dolorum doloremque fugiat dolore saepe laudantium ab dolores, soluta, neque, nesciunt dicta incidunt? Iusto, quas eligendi animi fugiat aliquid ducimus reiciendis molestias ipsum quia nostrum beatae optio deserunt quasi consectetur
+        eum inventore numquam saepe suscipit similique! Dolores itaque, quos cumque delectus quam praesentium nam illum quis. Inventore sint, aut esse tempora voluptatibus temporibus sapiente pariatur corrupti natus quisquam officia id distinctio architecto
+        illo expedita sunt blanditiis nihil! Dolorum voluptate animi magnam suscipit pariatur unde dolores eos numquam esse ea maiores fugit debitis illo voluptatibus possimus maxime aliquid, adipisci repudiandae nemo. Tenetur nihil laborum, iusto deleniti
+        dolores voluptas aliquid fuga, magnam dolore ad inventore, expedita qui exercitationem hic reiciendis similique eligendi quam corporis maiores. Odit a nam porro officiis numquam accusantium dolore commodi recusandae sunt enim? Nisi, necessitatibus.
+        Magni culpa optio corrupti iure accusantium perferendis doloribus, dolores tenetur modi dolorum sed fugiat saepe, vel tempora dolor. Fuga assumenda necessitatibus nam neque sed mollitia aut alias molestiae sint? Impedit odit maiores vero dolor
+        voluptas qui consequatur obcaecati. Quis odit in earum est? Sequi odio obcaecati officiis quod quae sint tempore maxime delectus quam impedit. Doloremque, repudiandae modi?</p>
+    <script>
+        function togglenav() {
+            document.getElementById("side-menu").style.display = "block";
+            document.getElementById("side-menu").style.height = "200px";
+        }
+
+        function closetoggle() {
+            document.getElementById("side-menu").style.display = "none";
+            document.getElementById("side-menu").style.height = "0px";
+        }
+    </script>
+</body>
+
+</html>

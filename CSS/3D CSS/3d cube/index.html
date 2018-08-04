@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3d CUBE</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="box">
+            <div id="front">FRONT</div>
+            <div id="back">BACK</div>
+            <div id="left">LEFT</div>
+            <div id="right">RIGHT</div>
+            <div id="top">TOP</div>
+            <div id="bottom">BOTTOM</div>
+        </div>
+    </div>
+
+    <button onclick="rx()">ROTATE X</button>
+    <button onclick="ry()">ROTATE Y</button>
+    <button onclick="rz()">ROTATE Z</button>
+    <button onclick="start()">ANIMATION START</button>
+    <button onclick="stop()">ANIMATION STOP</button>
+    <script>
+        var x, y, z;
+        x = 0;
+        y = 0;
+        z = 0;
+
+        function rx() {
+            x += 10;
+            document.getElementById("box").style.transform = "rotateX(" + x + "deg)"
+        }
+
+        function ry() {
+            y += 10;
+            document.getElementById("box").style.transform = "rotateY(" + y + "deg)"
+        }
+
+        function rz() {
+            z += 10;
+            document.getElementById("box").style.transform = "rotateZ(" + z + "deg)"
+        }
+
+        function start() {
+            document.getElementById("box").style.animation = "rotate 10s infinite linear"
+        }
+
+        function stop() {
+            document.getElementById("box").style.animation = ""
+        }
+    </script>
+</body>
+
+</html>

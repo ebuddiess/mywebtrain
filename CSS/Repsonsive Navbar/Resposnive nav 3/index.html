@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Nav 3</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openslidemenu()">
+                <svg width="30" height="30">
+                    <path class="top" d="M0,5 l30,0" stroke="white" stroke-width="5" />
+                    <path class="mid" d="M0,14 l30,0" stroke="white" stroke-width="5" />
+                    <path class="bottom" d="M0,23 l30,0" stroke="white" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+        <ul class="nav-max">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Services</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeslidemenu()">&times;</a>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cum in recusandae magni debitis. Itaque, quo! Voluptas qui soluta vero modi dolorem vitae nam commodi dicta illo autem, repellendus voluptatum dolorum magnam vel sunt nisi ratione delectus!
+        Dolores dolorum illum nemo consequatur tenetur, aut expedita non asperiores! Expedita eum est aut molestiae iste perspiciatis doloribus, similique adipisci minima vel, commodi omnis corporis dolorum a veniam voluptatem id quam voluptates ipsa
+        cupiditate modi magni? Tempore excepturi vel, pariatur tenetur doloribus voluptatum minima exercitationem aperiam odio non magni deserunt, perferendis, dignissimos facere delectus ratione! Saepe temporibus quam a, alias veniam sed vel quas iure.
+        Debitis suscipit quae illum voluptas fugiat soluta quasi ipsam sint quis corporis veritatis vel officia earum odio nostrum, voluptatibus impedit similique nihil iure! Amet corporis est illum, ipsam consequuntur ipsum aliquid tenetur officia, praesentium
+        dolor adipisci, earum dicta itaque quod ullam eveniet voluptatum rerum. Ex provident laboriosam id ipsa quo rerum perferendis voluptatibus totam culpa, vero exercitationem voluptatem fugit fuga aliquam autem, cumque eaque voluptates necessitatibus
+        velit ab fugiat vitae, excepturi reiciendis molestiae. Aspernatur alias explicabo amet sint unde, quas dolor deleniti nostrum? Reiciendis quasi, veniam architecto illo aspernatur odio facilis ea consectetur unde laborum fugiat perferendis error
+        eligendi possimus debitis magnam sunt. Dolor nihil dicta, dignissimos repellendus est dolores ratione magni vel, veritatis necessitatibus accusamus. Fugit illum doloremque dicta sit id distinctio consequuntur, sequi dolorum. Harum illo deserunt
+        officiis architecto consequuntur, provident, debitis quas quam explicabo aut labore facere totam alias, sunt iste porro cupiditate distinctio ratione. Numquam, id deleniti unde dolores nesciunt officia quos reiciendis voluptas neque quod. Quaerat
+        repudiandae dolores a praesentium dicta amet, consequatur nihil ad accusamus, ea velit suscipit ex veritatis autem placeat corrupti. Consequatur earum commodi distinctio. Quisquam soluta asperiores nobis quis earum qui tenetur repudiandae eos
+        minus, voluptates ducimus cupiditate eligendi eum, numquam quasi odio. Quis laudantium assumenda non cum possimus. Dicta, voluptatem asperiores veniam est, sit perspiciatis eveniet voluptatum illo facilis atque aperiam laboriosam deleniti! Facere
+        deserunt sequi molestias omnis. Non modi accusantium mollitia, repudiandae dolor reiciendis aut suscipit fugiat blanditiis quod accusamus reprehenderit. Omnis voluptas numquam, unde deleniti iusto cupiditate suscipit eum beatae saepe fugit deserunt
+        ut itaque quidem amet delectus impedit natus optio nobis assumenda adipisci est molestiae quae. Alias autem saepe quam veritatis tempore dolor est at totam eos vero doloremque beatae, in deleniti dolore molestias, accusamus culpa ratione aliquid
+        animi quaerat. Aperiam, totam libero. Officiis, consectetur!</p>
+    <script>
+        var bottomc = document.querySelector(".bottom")
+        var topc = document.querySelector(".top")
+        var middle = document.querySelector(".mid")
+
+        function openslidemenu() {
+            document.getElementById("side-menu").style.height = "190px";
+            topc.setAttribute("d", "M0,5 ,130,88")
+            middle.setAttribute("d", "")
+            bottomc.setAttribute("d", "M0,23,l30,-15")
+        }
+
+        function closeslidemenu() {
+            topc.setAttribute("d", "M0,5 l30,0");
+            middle.setAttribute("d", "M0,14 l30,0");
+            bottomc.setAttribute("d", "M0,23 l30,0")
+            document.getElementById("side-menu").style.height = "0";
+        }
+    </script>
+</body>
+
+</html>
