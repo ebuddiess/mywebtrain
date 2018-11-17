@@ -1,0 +1,79 @@
+h1 {
+    color: red;
+    background: yellow;
+    border-color: #db1daa;
+    border-width: 5px;
+    border-style: solid;
+}
+
+h3 {
+    background: blue;
+    color: orange;
+    border: solid 2px green;
+    /*  */
+}
+
+li {
+    color: rgb(218, 56, 56);
+}
+
+#button {
+    color: #fff;
+}
+
+#fillin {
+    background: red;
+    color: white;
+    text-align: center;
+    text-decoration: underline black;
+    border: 2px solid black;
+}
+
+body {
+    background-color: orange;
+}
+
+.fc {
+    background: green;
+}
+
+.sc {
+    background: yellow;
+}
+
+div {
+    background: skyblue;
+}
+
+form {
+    background: pink;
+}
+
+#list {
+    background: purple;
+}
+
+#dont {
+    background: green;
+}
+
+input[type="text"] {
+    background: skyblue;
+}
+
+textarea[id="txt"] {
+    background: yellow;
+}
+
+#thead {
+    background: white;
+}
+
+input[type="Submit"] {
+    background: green;
+}
+
+.charges {
+    color: red;
+    background: white;
+}

@@ -1,0 +1,44 @@
+.outer {
+    width: 400px;
+    height: 400px;
+    margin: 200px auto;
+    perspective: 700px;
+}
+
+.outer .box {
+    transition: transform 1s;
+    font: 80px impact;
+    text-align: center;
+    width: 400px;
+    transform-style: preserve-3d;
+    color: rgb(22, 21, 20);
+}
+
+h3 {
+    text-shadow: 3px 4px 4px rgb(56, 86, 255);
+}
+
+.box div {
+    width: 400px;
+    height: 400px;
+    opacity: .85;
+    position: absolute;
+}
+
+.front {
+    backface-visibility: hidden;
+    transform: translateZ(200px);
+    background: rgb(255, 169, 40);
+}
+
+.right {
+    backface-visibility: hidden;
+    background: rgb(192, 56, 233);
+    transform-origin: right;
+    transform: rotateY(90deg) translateX(200px);
+}
+
+.box:hover {
+    cursor: pointer;
+    transform: rotateY(-90deg)
+}
